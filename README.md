@@ -1,16 +1,16 @@
-<h1><u><b><center>📚Virtual Library Management System📚</center></b></u></h1>
+<h1><u><b><center>📚📚📚Virtual Library Management System📚📚📚</center></b></u></h1>
 <p>Welcome to the Virtual Library Management System! Our project is designed to modernize and streamline library operations, providing an efficient solution for managing resources, transactions, and insights. Leveraging the power of Java and flat file storage, our system offers a user-friendly interface and robust functionalities to enhance the library experience for both administrators and patrons.</p>
 
-<h2>🎁Features</h2>
-<h3>📕Book Management</h3>
+<h2>********Features********</h2>
+<h3>📔📗Book Management📔📗</h3>
 <ul>
-  <h4>➕ Add Books ➕</h4>
+  <h4>➕ Add Books </h4>
   <li>Allow the addition of new books to the library's inventory.</li>
   <li>Capture essential details: Title, Author, ISBN, Genre, Publication Date, and Number of Copies.</li>
   <li>Ensure that the ISBN is Unique, acting as a Primary Identifier for each book.</li>
   <li>Allow batch uploads where multiple books can be added at once, perhaps from a CSV or similar file format.</li>
 
-  <h4>🔍 Search & View Books 🔍</h4>
+  <h4> 🔎Search & View Books🔍 </h4>
   <li>Provide a Search Functionality using various Criteria like Title, Author or ISBN.</li>
   <li>Display Detailed views of Individual Books, showing all their attributes and current availability.</li>
 </ul>
@@ -32,7 +32,7 @@
 
 <h3>🖥Insights and Analytics</h3>
 <ul>
-  <h4>📊 Library Statistics 📊</h4>
+  <h4>📈Library Statistics 📈</h4>
   <li>Display a dashboard or report summary of the library's vital statistics.</li>
   <li>Offer a real-time count of the total books in the library.</li>
   <li>Showcase the number of books currently borrowed and their respective titles.</li>
