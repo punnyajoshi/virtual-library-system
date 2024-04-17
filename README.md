@@ -1,48 +1,90 @@
-<h1><u><b><center>📚📚📚Virtual Library Management System📚📚📚</center></b></u></h1>
-<p>Welcome to the Virtual Library Management System! Our project is designed to modernize and streamline library operations, providing an efficient solution for managing resources, transactions, and insights. Leveraging the power of Java and flat file storage, our system offers a user-friendly interface and robust functionalities to enhance the library experience for both administrators and patrons.</p>
+**Virtual Library Management System (VLMS)**
 
-<h2>********Features********</h2>
-<h3>📔📗Book Management📔📗</h3>
-<ul>
-  <h4>➕ Add Books </h4>
-  <li>Allow the addition of new books to the library's inventory.</li>
-  <li>Capture essential details: Title, Author, ISBN, Genre, Publication Date, and Number of Copies.</li>
-  <li>Ensure that the ISBN is Unique, acting as a Primary Identifier for each book.</li>
-  <li>Allow batch uploads where multiple books can be added at once, perhaps from a CSV or similar file format.</li>
+_Welcome to the Virtual Library System!_
 
-  <h4> 🔎Search & View Books🔍 </h4>
-  <li>Provide a Search Functionality using various Criteria like Title, Author or ISBN.</li>
-  <li>Display Detailed views of Individual Books, showing all their attributes and current availability.</li>
-</ul>
+The Virtual Library Management System (VLMS) is a Java application designed to streamline library operations through a console-based interface. It prioritizes speed, accuracy, and reliability, catering to the digital transformation of library management in today's technology-driven world.
 
-<h3>🖥Transaction Management</h3>
-<ul>
-  <h4>📥 Borrow Books 📥</h4>
-  <li>Facilitate the Borrowing process using a book's ISBN.</li>
-  <li>Log Details of the Borrowing Transaction, including the userID and Date of Borrowing.</li>
-  <li>Update the inventory to reflect the decreased count of available copies.</li>
-  <li>Ensure an error prompt if a user tries to borrow a book that's currently unavailable.</li>
+**Tech Stack:**
+Core Language: Java, Gradle, Git
+Data Storage: Flat file storage for storing book details and borrow logs.
 
-  <h4>📤 Return Books 📤</h4>
-  <li>Accommodate the return process using the book's ISBN and user ID.</li>
-  <li>Record the return transaction details, including the exact date of return.</li>
-  <li>Update the inventory to restore the count of the book's available copies.</li>
-  <li>Implement a system to manage and notify overdue returns.</li>
-</ul>
+**Setup**
+1. Clone this project using below code in the terminal  
+    git clone https://github.com/punnyajoshi/virtual-library-system.git
 
-<h3>🖥Insights and Analytics</h3>
-<ul>
-  <h4>📈Library Statistics 📈</h4>
-  <li>Display a dashboard or report summary of the library's vital statistics.</li>
-  <li>Offer a real-time count of the total books in the library.</li>
-  <li>Showcase the number of books currently borrowed and their respective titles.</li>
-  <li>Highlight the most popular books, ranked by their borrow count over a specified period.</li>
+2. Navigate to the project directory:
+   cd virtual-library-system
 
-  <h4>📈 Trend Analysis 📉</h4>
-  <li>Feature insights on borrowing trends over time, indicating peak borrowing periods or seasonal preferences.</li>
-  <li>Illustrate the genres or authors that are currently in Demand and Aiding in future procurement decisions.</li>
-</ul>
+3. Build the project
+    ./gradlew clean build
 
-<h2><u>💻 Tech Stack 🗃</u></h2>
-  <h4>Core Language: Java</h4>
-  <h4>Data Storage: Use flat file storage (e.g., <b>.txt</b> or <b>.csv</b>) for storing book details and borrow logs.</h4>
+4. Run sanity test
+    ./gradlew.clean.test
+
+
+**Features:**
+
+_Book Management:_
+
+1. Add Books:
+Easily add new books to the library inventory capturing essential details such as title, author, ISBN, genre, publication date, and number of copies
+The system ensures the uniqueness of ISBNs, serving as the primary identifier for each book
+Batch uploads from CSV or similar formats are supported
+
+2. Search & View Books:
+Search functionality allows users to find books by title, author, or ISBN
+Detailed views provide comprehensive information about each book, including its attributes and current availability
+
+**_Transaction Management:**_
+
+1. Borrow Books:
+Facilitate the borrowing process using a book's ISBN, recording transaction details like user ID and borrowing date
+The inventory is updated to reflect the decreased count of available copies, with error prompts for unavailable books
+
+2. Return Books:
+Accommodate book returns using the book's ISBN and user ID, recording return transaction details and updating the inventory accordingly
+The system manages and notifies overdue returns
+
+**Insights and Analytics:**
+
+_1. Library Statistics:_
+Display a dashboard summarizing vital library statistics, including the total number of books, currently borrowed books, and popular books based on borrow count
+
+_2. Trend Analysis:_
+Provide insights into borrowing trends over time, highlighting peak borrowing periods and preferences for specific genres or authors
+
+**Usage:**
+1. Add new books to the library using the provided form.
+2. Search for books by title, author, or genre. 
+3. Borrow books by providing borrower information and book details. 
+4. Return borrowed books and update transaction logs. 
+5. Analyze library statistics and trends using the provided tools.
+
+**Guidelines**
+1. Use core Java libraries and dependencies. 
+2. Organize code using Object-Oriented Principles, with classes for Book, User, and Library operations. 
+3. Handle errors gracefully, ensuring a smooth user experience. 
+4. Maintain data consistency when reading from or writing to files, preventing data loss or inconsistencies.
+
+**Deliverables:**
+Source Code: GitHub repository containing well-organized and commented source code.
+Documentation: README.md file detailing project overview, setup instructions, features, and descriptions.
+Feel free to explore the source code and documentation in the provided GitHub repository to experience the efficiency and effectiveness of the Virtual Library Management System firsthand.
+
+**Contributing:**
+_Contribution are welcomed_
+
+1. Fork the repository
+2. Create a new branch for your feature or bug fix:
+   git checkout -b feature-name
+3. Make changes:
+    git add .
+    git commit -m "First commit"
+4. Push the changes to fork
+   git push origin feature-name
+5. Open a pull request to merge your changes into the main branch of the main repository.
+
+**Maintainers**
+Name: Punnya Joshi
+Email: punnyajoshi@gmail.com
+GitHub profile: https://github.com/punnyajoshi
